@@ -10,7 +10,8 @@
 		"puppet.puppet-vscode",
 		"wscats.delete-node-modules",
 		"vscjava.vscode-gradle",
-		"codesnippetsaillc.codesnippetsai-extension"
+		"codesnippetsaillc.codesnippetsai-extension",
+		"hosho.solidity-debugger"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []
