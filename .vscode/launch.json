@@ -1,5 +1,29 @@
 {
 	"configurations": [
+		
+
+
+
+
+
+
+
+		{
+			"type": "android",
+			"request": "attach",
+			"name": "Android Attach",
+			"appSrcRoot": "${workspaceRoot}/app/src/main",
+			"adbPort": 5037,
+			"processId": "${command:PickAndroidProcess}"
+		},
+		{
+			"type": "dockerfile",
+			"request": "launch",
+			"name": "Docker: Build",
+			"dockerfile": "Dockerfile",
+			"contextPath": "${workspaceFolder}"
+		},
+
 		{
 			"name": "Wrangler",
 			"type": "node",
