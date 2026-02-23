@@ -19,5 +19,8 @@
 		{
 			"mode": "auto"
 		}
-	]
+	],
+	"puppet.editorService.formatOnType.enable": true,
+	"puppet.editorService.loglevel": "verbose",
+	"puppet.editorService.tcp.port": 33418
 }
