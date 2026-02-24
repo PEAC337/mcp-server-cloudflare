@@ -9,7 +9,6 @@
 		"davidanson.vscode-markdownlint",
 		"puppet.puppet-vscode",
 		"wscats.delete-node-modules",
-		"vscjava.vscode-gradle",
 		"codesnippetsaillc.codesnippetsai-extension",
 		"hosho.solidity-debugger"
 	],
