@@ -1,5 +1,22 @@
 {
+	"version": "0.2.0",
 	"configurations": [
+		{
+			"name": "Launch Apex Replay Debugger",
+			"type": "apex-replay",
+			"request": "launch",
+			"logFile": "${command:AskForLogFileName}",
+			"stopOnEntry": true,
+			"trace": true
+		},
+		{
+			"name": "Open inspector with Vitest",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "vitest",
+			"args": ["--inspect-brk", "--run"],
+			"console": "integratedTerminal"
+		},
 
 
 
@@ -13,28 +30,16 @@
 
 		{
 			"name": "Wrangler",
-			"type": "node",
+			"type": "chrome",
 			"request": "attach",
-			"port": 9229,
-			"processId": "${command:pickProcess}",
-			"cwd": "/",
+			"port": 9222,
 			"sourceMaps": true // works with or without this line
 		},
 		{
-			"type": "node",
-			"request": "launch",
-			"name": "Open inspector with Vitest",
-			"runtimeExecutable": "npm",
-			"runtimeArgs": ["run", "eval:dev"],
-			"console": "integratedTerminal",
-			"cwd": "${workspaceFolder}/apps/workers-bindings"
-		},
-		{
 			"name": "Attach to Workers Runtime",
-			"type": "node",
+			"type": "chrome",
 			"request": "attach",
-			"port": 9229,
-			"cwd": "/"
+			"port": 9229
 		}
 	],
 	"compounds": [
